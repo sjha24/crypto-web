@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    padding-top: 1rem;
+    height: 3rem;
+    background-color: #EFFFFD;
+}
+nav > div {
+    justify-content: center;
+}
+.logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text_justfy{
+    text-align: f;
+}
+.discription_price_container{
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+.discription > img {
+    width: 10rem;
+}
+.discription{
+    align-items: flex-start;
+    gap: 2rem;
+}
+.W_50{
+    width: 50vw;
+}
+.mt_1{
+    margin-top: 1rem;
+}
+.HistoricalData_container{
+    position: relative;
+    height: 20rem;
+    width: 45rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+footer{
+    margin-top: 10rem;
+    background-color:#B8FFF9;
+    text-align: center;
+    padding: 3rem;
+}
