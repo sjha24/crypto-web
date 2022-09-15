@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./detail.css">
+    <script
+    src="https://kit.fontawesome.com/0083aadd8e.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <nav class="flex_container">
+        <div class="flex_container">
+        <img class="logo" src="./crypto.png" alt="crypto">
+        <h1>Crypto Web</h1>
+        </div>
+    </nav>
+    <!-- Description and price container -->
+    <section class="discription_price_container flex_container">
+        <!-- Discription Container -->
+        <div class="discription flex_container">
+                <img
+                id="coin_img" 
+                src="" alt="bitcoin">
+           <div class="W_50">
+            <h1>Market Rank <span id="coin_rank"></span></h1>
+            <h1 id="coin_name"></h1>
+            <p class="text_justify" id="bicoin_description"></p>
+           </div>
+        </div>
+        <!-- price container -->
+        <div class="price">
+            <table class="mt_1">
+                <body>
+                    <tr>
+                        <td>INR</td>
+                        <td id="Bitcoin_price"></td>
+                    </tr>
+                    <tr>
+                        <td>USD</td>
+                        <td id="price_usd"></td>
+                    </tr>
+                    <tr>
+                        <td>EUR</td>
+                        <td id="price_eur"></td>
+                    </tr>
+                </body>
+            </table>
+        </div>
+    </section>
+    <!-- Historical data -->
+    <section class="HistoricalData_container">
+        <canvas id="myChart"></canvas>
+    </section>
+    <!--  -->
+        <footer>
+            <i class="fa-brands fa-facebook-f"></i>
+            &emsp;
+            <i class="fa-brands fa-square-instagram"></i>
+            &emsp;
+            <i class="fa-brands fa-twitter"></i>
+            &emsp;
+            <i class="fa-brands fa-linkedin-in"></i>
+            &emsp;
+            <i class="fa-brands fa-github"></i>
+            &emsp;
+            <i class="fa-solid fa-envelope"></i>
+            &emsp;
+            <i class="fa-brands fa-hackerrank"></i>
+            <h3>Copyright &copy; Saurav<h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="./detail.js"></script>
+</body>
+</html>
