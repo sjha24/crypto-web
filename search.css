@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    padding-top: 1rem;
+    height: 3rem;
+    align-items: center;
+    background-color: #E1FFEE;
+    padding: 0.5px 1rem;
+}
+
+body{
+    margin: 0px;
+    background-color: white;
+}
+.search_Container{
+    margin-top: 4rem;
+   margin-left: 5vw;
+}
+#search{
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#search_btn{
+    width: 10px;
+    cursor:pointer;
+}
+
+.flex_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer{
+    background-color:#B8FFF9;
+    text-align: center;
+    padding: 3rem;
+}
+footer > h3 {
+    padding-top: 2rem;
+}
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav{
+  
+}
+
+
