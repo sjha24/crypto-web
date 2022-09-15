@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./detail.html"> -->
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0083aadd8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="flex_container">
+      <div class="flex_container">
+      <img class="logo" src="./crypto.png" alt="crypto">
+      <h1>Crypto Web</h1>
+      </div>
+      <a href="search.html" class="achnor_btn">Search more Crypto coin</a>
+    </nav>
+    <!-- Main section containing main heading and image -->
+    <section class="main flex_container">
+      <h1>Welcome to Crypto Trending Website</h1>
+      <img src="./undraw_crypto_portfolio_2jy5.png" alt="coin" />
+    </section>
+
+    <!-- Second section containing coin data -->
+    <section class="trending_coin ">
+     <div class="scroll_animation flex_container">
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Bitcoin</h3>
+          <p>Rs.<span id="bitcoin_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Ethereum</h3>
+          <p>Rs.<span id="ethereum_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Tether</h3>
+          <p>Rs.<span id="tether_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Cardano</h3>
+          <p>Rs.<span id="cardano_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Solana</h3>
+          <p>Rs.<span id="solana_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Polkadot</h3>
+          <p>Rs.<span id="polkadot_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Dogecoin</h3>
+          <p>Rs.<span id="dogecoin_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Polygon</h3>
+          <p>Rs.<span id="polygon_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Uniswap</h3>
+          <p>Rs.<span id="uniswap_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1547034700"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Chainlink</h3>
+          <p>Rs.<span id="chainlink_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/7310/thumb/oCw2s3GI_400x400.jpeg?1645172042"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Cronos</h3>
+          <p>Rs.<span id="cronos_price_Container"></span></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="float_left"
+          src="https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157"
+          alt="coinpic"
+        />
+        <div class="float_right">
+          <h3>Stellar</h3>
+          <p>Rs.<span id="Stellar_price_Container"></span></p>
+        </div>
+      </div>
+     </div>
+      
+    </section>
+    <!-- Third section containing the main feture of the website -->
+    <section class="feature flex_container">
+      <div class="card">
+        <h1>Free</h1>
+        <p>
+          This is Completely free to use website & we do not show any paid ads.
+        </p>
+      </div>
+      <div class="card">
+        <h1>Historical Data</h1>
+        <p>
+          We show graphical represention of Historical data of the
+          Cryptocurrency. Thre Graph Show 24 hour Historical Data
+        </p>
+      </div>
+      <div class="card">
+        <h1>100+ Coin</h1>
+        <p>
+          We show the data or many popular Cryptocurrency and also search
+          facility for a smoother user exprience
+        </p>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <i class="fa-brands fa-facebook-f"></i>
+        &emsp;
+        <i class="fa-brands fa-square-instagram"></i>
+        &emsp;
+        <i class="fa-brands fa-twitter"></i>
+        &emsp;
+        <i class="fa-brands fa-linkedin-in"></i>
+        &emsp;
+        <i class="fa-brands fa-github"></i>
+        &emsp;
+        <i class="fa-solid fa-envelope"></i>
+        &emsp;
+        <i class="fa-brands fa-hackerrank"></i>
+        <h3>Copyright &copy; Saurav<h3>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
