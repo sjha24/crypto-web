@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+    background-color: white;
+}
+.main{
+    padding: 2rem;
+    justify-content: space-evenly;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+}
+h1,p, .main{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    height: 3rem;
+    background-color: #EFFFFD;
+}
+.flex_container{
+    display: flex;
+    gap: 0.5rem;
+}
+.main > img{
+    width: 45%;
+    /* height: 35%; */
+}
+.trending_coin {
+    background-color: #E1FFEE;
+    /* */
+    padding: 1rem;
+    overflow: hidden;
+}
+.trending_coin > .scroll_animation{
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    animation-name: smoothScrol;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.trending_coin .card {
+    /* box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    /* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; */
+    padding: 0.5rem 4rem;
+    margin: 0.5px 2vw;
+    margin-bottom: 10px;
+    width: 15rem;
+    flex-shrink: 0rem;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+}
+.float_right{
+    float: right;
+    margin-left: 1rem;
+}
+.feature {
+    background-color: #85F4FF;
+    /*; */
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+.feature > .card {
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    text-align: center;
+    padding: 1rem;
+    width: 25vw;
+}
+.feature > .card:hover{
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+footer{
+    background-color:#B8FFF9;
+    text-align: center;
+    padding: 3rem;
+}
+footer > h3 {
+    padding-top: 2rem;
+}
+
+@keyframes smoothScrol{
+    from{
+        left: 0%;
+    }to{
+       left: -100%;
+    }
+}
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav{
+    height: 3rem;
+    background-color: #E1FFEE;
+    align-items: center;
+    padding: 0.5px 1rem;
+    justify-content: space-around;
+}
+nav > h1 {
+    display: inline;
+}
+
+.achnor_btn{
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    border: 4px solid navy;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    transition: 0.5s all;
+    color: black;
+    font-size: solid;
+}
+.achnor_btn:hover{
+    background-color: navajowhite;
+    color:green;
+}
+
+@media screen and (max-width: 500px){
+    .main > img {
+        width: 50vw;
+    }
+}
